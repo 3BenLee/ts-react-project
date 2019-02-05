@@ -11,10 +11,10 @@ export interface IMyClassState {
 
 class MyClass extends React.Component<IMyClassProps, IMyClassState> {
 
-  public state = {
+  state = {
     age: 42
   }
-  public render() {
+  render() {
     return (
       <div className="App">
         <h1>My name is {this.props.name} and I am {this.state.age}!</h1>
