@@ -1,4 +1,6 @@
 import * as React from 'react';
+///// This import makes the props accessible as on line 16
+import { RouteComponentProps } from 'react-router-dom';
 
 interface IPost {
   title: string;
@@ -10,7 +12,8 @@ interface IState {
   loadedPost: IPost | null;
 }
 
-class FullPost extends React.Component<any, IState> {
+/// If using react router and you want to pass props(params., etc...)
+class FullPost extends React.Component<RouteComponentProps<{id: string}>, IState> {
 
   state: Readonly<IState> = {
     loadedPost: null
