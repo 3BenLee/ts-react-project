@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
-import BlogRead from './components/BlogRead';
+import FullPost from './components/FullPost';
 import MyBlogs from './components/MyBlogs';
 import MyClass from './components/MyClass';
 
@@ -15,7 +15,7 @@ class App extends React.Component {
         isDope={true}
         />
         <Route exact path='/' component={MyBlogs} />
-        <Route exact path='/blogread/:id' component={BlogRead} />
+        <Route exact path='/fullpost/:id' component={FullPost} />
       </div>
     );
   }
